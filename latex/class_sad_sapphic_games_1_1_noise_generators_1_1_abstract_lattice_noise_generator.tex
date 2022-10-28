@@ -1,0 +1,83 @@
+\hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator}{}\doxysection{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Lattice\+Noise\+Generator Class Reference}
+\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator}\index{SadSapphicGames.NoiseGenerators.AbstractLatticeNoiseGenerator@{SadSapphicGames.NoiseGenerators.AbstractLatticeNoiseGenerator}}
+
+
+Base abstract class used for noise generators that specifically use lattice based algorithms  
+
+
+Inheritance diagram for Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Lattice\+Noise\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.786070cm]{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a90ab8d9f02c7963bb956606fe003561f}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a90ab8d9f02c7963bb956606fe003561f}} 
+{\bfseries Abstract\+Lattice\+Noise\+Generator} (uint \+\_\+tex\+Width, uint \+\_\+tex\+Height, uint \+\_\+seed, Vector2\+Int \+\_\+lattice\+Cell\+Size, bool \+\_\+allow\+Partial\+Cells=false)
+\item 
+override void \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_aff4e47d00afce5a09c19a0dd98418acd}{Set\+Shader\+Parameters}} ()
+\begin{DoxyCompactList}\small\item\em Sets the parameters of the compute shader \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a840c6d860ddeb1c82693b32665a2caf3}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a5f7863724d7368528393f27be6b7ebc7}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a5f7863724d7368528393f27be6b7ebc7}} 
+int {\bfseries generate\+Lattice\+Kernel}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The kernel for the method in the compute shader to generate the lattice used for creating the noise texture \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a7ad8e1af1d813067d00484e4744d0529}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a7ad8e1af1d813067d00484e4744d0529}} 
+int {\bfseries wrap\+Lattice\+Kernel}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The kernel for the method in the compute shader to wrap the edges of the lattice around to each other to ensure seamless tiling \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_aae1edb30e4fe76abeaabe641ecc8276c}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_aae1edb30e4fe76abeaabe641ecc8276c}} 
+Vector3\+Int {\bfseries lattice\+Thread\+Group\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of thread groups to use when generating the lattice \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a9c297bffc6b094d866a398d233e21ab6}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a9c297bffc6b094d866a398d233e21ab6}} 
+abstract int {\bfseries Lattice\+Buffer\+Stride}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The memory size of a single entry in the lattice buffer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a9cde8601441de8f37dabeeeac4234aa6}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a9cde8601441de8f37dabeeeac4234aa6}} 
+bool {\bfseries Allow\+Partial\+Cells}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If the texture should be allowed to cut off the lattice cells along the edges, cannot be set to true if Require\+Seamless\+Tiling is \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_abe2bc647ac6b5a8d613d19294dd10fa3}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_abe2bc647ac6b5a8d613d19294dd10fa3}} 
+override bool {\bfseries Require\+Seamless\+Tiling}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_ab5190c85680a90aa877ee2b39f6cdbe3}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_ab5190c85680a90aa877ee2b39f6cdbe3}} 
+Vector2\+Int {\bfseries Lattice\+Cell\+Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The size in pixels of a single lattice cells, unless Allow\+Partial\+Cells is set to true must be a factor of the texture size (the value will be adjust to the nearest factor automatically) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Base abstract class used for noise generators that specifically use lattice based algorithms 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a840c6d860ddeb1c82693b32665a2caf3}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_a840c6d860ddeb1c82693b32665a2caf3}} 
+\index{SadSapphicGames.NoiseGenerators.AbstractLatticeNoiseGenerator@{SadSapphicGames.NoiseGenerators.AbstractLatticeNoiseGenerator}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!SadSapphicGames.NoiseGenerators.AbstractLatticeNoiseGenerator@{SadSapphicGames.NoiseGenerators.AbstractLatticeNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Lattice\+Noise\+Generator.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Noise\+Generator}}.
+
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_aff4e47d00afce5a09c19a0dd98418acd}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_lattice_noise_generator_aff4e47d00afce5a09c19a0dd98418acd}} 
+\index{SadSapphicGames.NoiseGenerators.AbstractLatticeNoiseGenerator@{SadSapphicGames.NoiseGenerators.AbstractLatticeNoiseGenerator}!SetShaderParameters@{SetShaderParameters}}
+\index{SetShaderParameters@{SetShaderParameters}!SadSapphicGames.NoiseGenerators.AbstractLatticeNoiseGenerator@{SadSapphicGames.NoiseGenerators.AbstractLatticeNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{SetShaderParameters()}{SetShaderParameters()}}
+{\footnotesize\ttfamily override void Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Lattice\+Noise\+Generator.\+Set\+Shader\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Sets the parameters of the compute shader 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a2f034e7e73ca8c010cf43c9386a55366}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Noise\+Generator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Layla/\+Documents/\+My Docs/\+Game\+Dev/\+Noise\+Gen\+Development/\+Assets/\+Packages/\+Noise\+Generators/\+Runtime/\+Noise\+Generators/Abstract\+Lattice\+Noise\+Generator.\+cs\end{DoxyCompactItemize}

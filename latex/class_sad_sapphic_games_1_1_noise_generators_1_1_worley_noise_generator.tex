@@ -1,0 +1,156 @@
+\hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator}{}\doxysection{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Worley\+Noise\+Generator Class Reference}
+\label{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator}\index{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator@{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator}}
+
+
+A generator object used to create a worley noise texture  
+
+
+Inheritance diagram for Sad\+Sapphic\+Games.\+Noise\+Generators.\+Worley\+Noise\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a9503a1410442b4ff921af4149094bdd0}{Worley\+Noise\+Generator}} (uint \+\_\+tex\+Width, uint \+\_\+tex\+Height, uint \+\_\+seed, Vector2\+Int \+\_\+cell\+Count, Texture\+Channel \+\_\+active\+Channel)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator}{Worley\+Noise\+Generator}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Render\+Texture \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a80cf6f5225a4cd035eb19c525dfb6682}{Generate\+Texture}} (uint \+\_\+tex\+Width, uint \+\_\+tex\+Height, uint \+\_\+seed, Vector2\+Int \+\_\+cell\+Count, Texture\+Channel \+\_\+active\+Channel, bool \+\_\+require\+Seamless\+Tiling=false, bool \+\_\+invert\+Texture=false)
+\begin{DoxyCompactList}\small\item\em Generates a Worley noise texture using the given parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a79a4b4c7cbdfaa079fd065d8cc88fded}{Set\+Shader\+Parameters}} ()
+\begin{DoxyCompactList}\small\item\em Sets the parameters of the compute shader \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a1d68a2c8c8d14304d2763707dceae0e6}{Inner\+Generate\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em The inner implementation of generated the noise texture \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a05168d228eacefa27a535a1f50e7e410}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a33ddb60dc0b0ce8872de285ac8f604cb}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a33ddb60dc0b0ce8872de285ac8f604cb}} 
+override string {\bfseries Compute\+Shader\+Path}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a80f569a19610d04e0369a60a77d22825}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a80f569a19610d04e0369a60a77d22825}} 
+int {\bfseries Normalize\+Texture\+Kernel}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The kernel for normalizing the values of the final texture \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a177f0a596f6c70c5296289f8212fd3a4}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a177f0a596f6c70c5296289f8212fd3a4}} 
+Texture\+Channel {\bfseries Active\+Channel}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The channel the noise is being stored in \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a6b84172870cf8c355eb68f2ae4a9cdd8}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a6b84172870cf8c355eb68f2ae4a9cdd8}} 
+bool {\bfseries Invert\+Texture}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If the values of the texture should be inverted so the are brighter close to the control points and dark far \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a395fecf632542f92144ac21fb742eee2}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a395fecf632542f92144ac21fb742eee2}} 
+Vector2\+Int {\bfseries Cell\+Counts}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of cells along each axis to place a control point in \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A generator object used to create a worley noise texture 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a9503a1410442b4ff921af4149094bdd0}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a9503a1410442b4ff921af4149094bdd0}} 
+\index{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator@{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator}!WorleyNoiseGenerator@{WorleyNoiseGenerator}}
+\index{WorleyNoiseGenerator@{WorleyNoiseGenerator}!SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator@{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{WorleyNoiseGenerator()}{WorleyNoiseGenerator()}}
+{\footnotesize\ttfamily Sad\+Sapphic\+Games.\+Noise\+Generators.\+Worley\+Noise\+Generator.\+Worley\+Noise\+Generator (\begin{DoxyParamCaption}\item[{uint}]{\+\_\+tex\+Width,  }\item[{uint}]{\+\_\+tex\+Height,  }\item[{uint}]{\+\_\+seed,  }\item[{Vector2\+Int}]{\+\_\+cell\+Count,  }\item[{Texture\+Channel}]{\+\_\+active\+Channel }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator}{Worley\+Noise\+Generator}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tex\+Width} & The width of the generated texture\\
+\hline
+{\em \+\_\+tex\+Height} & The height of the generated texture\\
+\hline
+{\em \+\_\+seed} & The seed of the pseudo-\/random number generation\\
+\hline
+{\em \+\_\+cell\+Count} & The number of cells along each axis to place a point int\\
+\hline
+{\em \+\_\+active\+Channel} & The channel to place the generated noise in, if Texture\+Channel.\+All generated a separate texture for each channel\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a05168d228eacefa27a535a1f50e7e410}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a05168d228eacefa27a535a1f50e7e410}} 
+\index{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator@{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator@{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Sad\+Sapphic\+Games.\+Noise\+Generators.\+Worley\+Noise\+Generator.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Noise\+Generator}}.
+
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a80cf6f5225a4cd035eb19c525dfb6682}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a80cf6f5225a4cd035eb19c525dfb6682}} 
+\index{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator@{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator}!GenerateTexture@{GenerateTexture}}
+\index{GenerateTexture@{GenerateTexture}!SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator@{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateTexture()}{GenerateTexture()}}
+{\footnotesize\ttfamily static Render\+Texture Sad\+Sapphic\+Games.\+Noise\+Generators.\+Worley\+Noise\+Generator.\+Generate\+Texture (\begin{DoxyParamCaption}\item[{uint}]{\+\_\+tex\+Width,  }\item[{uint}]{\+\_\+tex\+Height,  }\item[{uint}]{\+\_\+seed,  }\item[{Vector2\+Int}]{\+\_\+cell\+Count,  }\item[{Texture\+Channel}]{\+\_\+active\+Channel,  }\item[{bool}]{\+\_\+require\+Seamless\+Tiling = {\ttfamily false},  }\item[{bool}]{\+\_\+invert\+Texture = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generates a Worley noise texture using the given parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tex\+Width} & the width of the texture\\
+\hline
+{\em \+\_\+tex\+Height} & the height of the texture\\
+\hline
+{\em \+\_\+seed} & the seed of the pseudo-\/random number generation\\
+\hline
+{\em \+\_\+cell\+Count} & the number of cells to place a point in along each axis\\
+\hline
+{\em \+\_\+active\+Channel} & the channel to store the texture in, if Texture\+Channel.\+All each channel will store a different texture\\
+\hline
+{\em \+\_\+require\+Seamless\+Tiling} & if the texture should tile seamlessly\\
+\hline
+{\em \+\_\+invert\+Texture} & if the values of the texture should be inverted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a1d68a2c8c8d14304d2763707dceae0e6}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a1d68a2c8c8d14304d2763707dceae0e6}} 
+\index{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator@{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator}!InnerGenerateTexture@{InnerGenerateTexture}}
+\index{InnerGenerateTexture@{InnerGenerateTexture}!SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator@{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{InnerGenerateTexture()}{InnerGenerateTexture()}}
+{\footnotesize\ttfamily override void Sad\+Sapphic\+Games.\+Noise\+Generators.\+Worley\+Noise\+Generator.\+Inner\+Generate\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+The inner implementation of generated the noise texture 
+
+
+
+Implements \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_abdc0fe6e55a4e7b6d02abf4bb0956f58}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Noise\+Generator}}.
+
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a79a4b4c7cbdfaa079fd065d8cc88fded}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_a79a4b4c7cbdfaa079fd065d8cc88fded}} 
+\index{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator@{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator}!SetShaderParameters@{SetShaderParameters}}
+\index{SetShaderParameters@{SetShaderParameters}!SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator@{SadSapphicGames.NoiseGenerators.WorleyNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{SetShaderParameters()}{SetShaderParameters()}}
+{\footnotesize\ttfamily override void Sad\+Sapphic\+Games.\+Noise\+Generators.\+Worley\+Noise\+Generator.\+Set\+Shader\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Sets the parameters of the compute shader 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a2f034e7e73ca8c010cf43c9386a55366}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Noise\+Generator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Layla/\+Documents/\+My Docs/\+Game\+Dev/\+Noise\+Gen\+Development/\+Assets/\+Packages/\+Noise\+Generators/\+Runtime/\+Noise\+Generators/Worley\+Noise\+Generator.\+cs\end{DoxyCompactItemize}

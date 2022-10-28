@@ -1,0 +1,94 @@
+\hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component}{}\doxysection{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Noise\+Generator\+Component Class Reference}
+\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component}\index{SadSapphicGames.NoiseGenerators.AbstractNoiseGeneratorComponent@{SadSapphicGames.NoiseGenerators.AbstractNoiseGeneratorComponent}}
+
+
+The abstract bass class of all Mono\+Behaviour components wrapping an \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator}{Abstract\+Noise\+Generator}}  
+
+
+Inheritance diagram for Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Noise\+Generator\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.785047cm]{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a10a6953e2a5875eaa923563e7c54a4c9}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a10a6953e2a5875eaa923563e7c54a4c9}} 
+void {\bfseries Generate\+Texture} ()
+\begin{DoxyCompactList}\small\item\em Generates the noise texture \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a344157975c81906b024e799549d6c771}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a344157975c81906b024e799549d6c771}} 
+void {\bfseries Dispose} ()
+\begin{DoxyCompactList}\small\item\em Disposes the Noise\+Generator\+Object used to create the noise texture and the texture itself. Do not invoke this until done using the texture \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator}{Abstract\+Noise\+Generator}} \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_ad54c1d2dd8d041b5668f8d5df7af9560}{Create\+Generator\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Constructs the generator object and sets its parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a18febd9ec02b86e1f65840c79d7c244a}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a18febd9ec02b86e1f65840c79d7c244a}} 
+virtual void {\bfseries Update\+Generator\+Settings} ()
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_aecfefd0985ed69969b8d22f813301f7f}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_aecfefd0985ed69969b8d22f813301f7f}} 
+virtual void {\bfseries Dispose} (bool disposing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a190bdac39679ae0c45f0ca4aed57ef3f}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a190bdac39679ae0c45f0ca4aed57ef3f}} 
+uint {\bfseries seed}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a0b5bfd1d09de14d1ccf9f6f30f429fcb}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a0b5bfd1d09de14d1ccf9f6f30f429fcb}} 
+uint {\bfseries tex\+Width}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a4912be4edb2ffe7b99a7011988768733}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a4912be4edb2ffe7b99a7011988768733}} 
+uint {\bfseries tex\+Height}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_aac3056345482c8e1b9a06a552a9a6f20}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_aac3056345482c8e1b9a06a552a9a6f20}} 
+\mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator}{Abstract\+Noise\+Generator}} {\bfseries Noise\+Generator\+Object}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The object that generates the noise texture \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a7269ea3b69566772793427662456dcd6}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a7269ea3b69566772793427662456dcd6}} 
+Render\+Texture {\bfseries Noise\+Texture}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The noise texture created by the generator \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a3072a397168109ca542e8ffacf8f4e17}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a3072a397168109ca542e8ffacf8f4e17}} 
+uint {\bfseries Seed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The seed that will be used in the pseudo-\/random number generation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_ac5f9a5c2bbb34f56e993352e59bcf29e}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_ac5f9a5c2bbb34f56e993352e59bcf29e}} 
+uint {\bfseries Tex\+Width}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Width of the generated texture \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a1c246af991e50f56c20bf1da522216bc}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_a1c246af991e50f56c20bf1da522216bc}} 
+uint {\bfseries Tex\+Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The height of the generated texture \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_aa63a8b2a515d1f9b19984706bda20fd0}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_aa63a8b2a515d1f9b19984706bda20fd0}} 
+Action {\bfseries On\+Texture\+Generation}
+\begin{DoxyCompactList}\small\item\em This event will be invoked when a new texture is generated \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The abstract bass class of all Mono\+Behaviour components wrapping an \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator}{Abstract\+Noise\+Generator}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_ad54c1d2dd8d041b5668f8d5df7af9560}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_component_ad54c1d2dd8d041b5668f8d5df7af9560}} 
+\index{SadSapphicGames.NoiseGenerators.AbstractNoiseGeneratorComponent@{SadSapphicGames.NoiseGenerators.AbstractNoiseGeneratorComponent}!CreateGeneratorObject@{CreateGeneratorObject}}
+\index{CreateGeneratorObject@{CreateGeneratorObject}!SadSapphicGames.NoiseGenerators.AbstractNoiseGeneratorComponent@{SadSapphicGames.NoiseGenerators.AbstractNoiseGeneratorComponent}}
+\doxysubsubsection{\texorpdfstring{CreateGeneratorObject()}{CreateGeneratorObject()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator}{Abstract\+Noise\+Generator}} Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Noise\+Generator\+Component.\+Create\+Generator\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Constructs the generator object and sets its parameters 
+
+
+
+Implemented in \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_fractal_noise_generator_component_a9e4c8794c2081fc4b6e9fc02d0b177c0}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Fractal\+Noise\+Generator\+Component}}, \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_component_add8f6cf60cfcaa332f109dfbee82ed6b}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Perlin\+Noise\+Generator\+Component}}, \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_component_a0cd7a3bf049284f9149bb49bb2064ec4}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Random\+Noise\+Generator\+Component}}, \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_value_noise_generator_component_af68e32a2aa6ccaee234f34f301e3a737}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Value\+Noise\+Generator\+Component}}, and \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_worley_noise_generator_component_af4b23db5256605e4dcdb544ec06b003e}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Worley\+Noise\+Generator\+Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Layla/\+Documents/\+My Docs/\+Game\+Dev/\+Noise\+Gen\+Development/\+Assets/\+Packages/\+Noise\+Generators/\+Runtime/\+Components/Abstract\+Noise\+Generator\+Component.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator}{}\doxysection{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Random\+Noise\+Generator Class Reference}
+\label{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator}\index{SadSapphicGames.NoiseGenerators.RandomNoiseGenerator@{SadSapphicGames.NoiseGenerators.RandomNoiseGenerator}}
+
+
+A generator object used to create a purely random noise texture  
+
+
+Inheritance diagram for Sad\+Sapphic\+Games.\+Noise\+Generators.\+Random\+Noise\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_a4ecbab48a616de709e54cc1521f5c82d}{Random\+Noise\+Generator}} (uint tex\+Width, uint tex\+Height, uint seed)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator}{Random\+Noise\+Generator}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Render\+Texture \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_adc6aef51e42b94c2da42d06f0a2c92aa}{Generate\+Texture}} (uint \+\_\+tex\+Width, uint \+\_\+tex\+Height, uint \+\_\+seed, bool \+\_\+require\+Seamless\+Tiling=true)
+\begin{DoxyCompactList}\small\item\em Generates a random noise texture using the provided parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_ad1ec87a04af1c995090af44bdb678d85}{Inner\+Generate\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em The inner implementation of generated the noise texture \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_a469342aa2a7b186ef73af5759cc3cf0b}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_a469342aa2a7b186ef73af5759cc3cf0b}} 
+override string {\bfseries Compute\+Shader\+Path}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A generator object used to create a purely random noise texture 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_a4ecbab48a616de709e54cc1521f5c82d}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_a4ecbab48a616de709e54cc1521f5c82d}} 
+\index{SadSapphicGames.NoiseGenerators.RandomNoiseGenerator@{SadSapphicGames.NoiseGenerators.RandomNoiseGenerator}!RandomNoiseGenerator@{RandomNoiseGenerator}}
+\index{RandomNoiseGenerator@{RandomNoiseGenerator}!SadSapphicGames.NoiseGenerators.RandomNoiseGenerator@{SadSapphicGames.NoiseGenerators.RandomNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{RandomNoiseGenerator()}{RandomNoiseGenerator()}}
+{\footnotesize\ttfamily Sad\+Sapphic\+Games.\+Noise\+Generators.\+Random\+Noise\+Generator.\+Random\+Noise\+Generator (\begin{DoxyParamCaption}\item[{uint}]{tex\+Width,  }\item[{uint}]{tex\+Height,  }\item[{uint}]{seed }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator}{Random\+Noise\+Generator}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex\+Width} & The width of the generated texture\\
+\hline
+{\em tex\+Height} & The height of the generated texture\\
+\hline
+{\em seed} & The seed of the pseudo-\/random number generation\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_adc6aef51e42b94c2da42d06f0a2c92aa}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_adc6aef51e42b94c2da42d06f0a2c92aa}} 
+\index{SadSapphicGames.NoiseGenerators.RandomNoiseGenerator@{SadSapphicGames.NoiseGenerators.RandomNoiseGenerator}!GenerateTexture@{GenerateTexture}}
+\index{GenerateTexture@{GenerateTexture}!SadSapphicGames.NoiseGenerators.RandomNoiseGenerator@{SadSapphicGames.NoiseGenerators.RandomNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateTexture()}{GenerateTexture()}}
+{\footnotesize\ttfamily static Render\+Texture Sad\+Sapphic\+Games.\+Noise\+Generators.\+Random\+Noise\+Generator.\+Generate\+Texture (\begin{DoxyParamCaption}\item[{uint}]{\+\_\+tex\+Width,  }\item[{uint}]{\+\_\+tex\+Height,  }\item[{uint}]{\+\_\+seed,  }\item[{bool}]{\+\_\+require\+Seamless\+Tiling = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generates a random noise texture using the provided parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tex\+Width} & the width of the generated texture\\
+\hline
+{\em \+\_\+tex\+Height} & the height of the generated texture\\
+\hline
+{\em \+\_\+seed} & the seed of the pseudo-\/random number generation\\
+\hline
+{\em \+\_\+require\+Seamless\+Tiling} & If the texture should tile seamlessly\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated texture
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_ad1ec87a04af1c995090af44bdb678d85}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_random_noise_generator_ad1ec87a04af1c995090af44bdb678d85}} 
+\index{SadSapphicGames.NoiseGenerators.RandomNoiseGenerator@{SadSapphicGames.NoiseGenerators.RandomNoiseGenerator}!InnerGenerateTexture@{InnerGenerateTexture}}
+\index{InnerGenerateTexture@{InnerGenerateTexture}!SadSapphicGames.NoiseGenerators.RandomNoiseGenerator@{SadSapphicGames.NoiseGenerators.RandomNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{InnerGenerateTexture()}{InnerGenerateTexture()}}
+{\footnotesize\ttfamily override void Sad\+Sapphic\+Games.\+Noise\+Generators.\+Random\+Noise\+Generator.\+Inner\+Generate\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+The inner implementation of generated the noise texture 
+
+
+
+Implements \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_abdc0fe6e55a4e7b6d02abf4bb0956f58}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Noise\+Generator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Layla/\+Documents/\+My Docs/\+Game\+Dev/\+Noise\+Gen\+Development/\+Assets/\+Packages/\+Noise\+Generators/\+Runtime/\+Noise\+Generators/Random\+Noise\+Generator.\+cs\end{DoxyCompactItemize}

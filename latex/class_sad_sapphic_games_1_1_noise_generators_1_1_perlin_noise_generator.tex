@@ -1,0 +1,117 @@
+\hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator}{}\doxysection{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Perlin\+Noise\+Generator Class Reference}
+\label{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator}\index{SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator@{SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator}}
+
+
+A generator object used to create perlin noise textures  
+
+
+Inheritance diagram for Sad\+Sapphic\+Games.\+Noise\+Generators.\+Perlin\+Noise\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_a82701a8f56d0488dec4976ae4baa4d50}{Perlin\+Noise\+Generator}} (uint \+\_\+tex\+Width, uint \+\_\+tex\+Height, uint \+\_\+seed, Vector2\+Int \+\_\+lattice\+Cell\+Size, bool \+\_\+allow\+Partial\+Cells=false)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator}{Perlin\+Noise\+Generator}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Render\+Texture \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_ab42d5027a2d2d982d9df54cc27778dab}{Generate\+Texture}} (uint \+\_\+tex\+Width, uint \+\_\+tex\+Height, uint \+\_\+seed, Vector2\+Int \+\_\+lattice\+Cell\+Size, bool \+\_\+allow\+Partial\+Cells=false, bool \+\_\+require\+Seamless\+Tiling=true)
+\begin{DoxyCompactList}\small\item\em Generates a perlin noise texture using the given parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_aabd6d3b521aaf1725f5f73757b6a5129}{Inner\+Generate\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em The inner implementation of generated the noise texture \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_a13487cef4e8255df5639216518c4678f}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_a13487cef4e8255df5639216518c4678f}} 
+override int {\bfseries Lattice\+Buffer\+Stride}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The memory size of an entry in the lattice buffer (8 floats / 4 float2\textquotesingle{}s) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_a91c8518f9aba3d07d08de311ebac06a9}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_a91c8518f9aba3d07d08de311ebac06a9}} 
+override string {\bfseries Compute\+Shader\+Path}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A generator object used to create perlin noise textures 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_a82701a8f56d0488dec4976ae4baa4d50}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_a82701a8f56d0488dec4976ae4baa4d50}} 
+\index{SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator@{SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator}!PerlinNoiseGenerator@{PerlinNoiseGenerator}}
+\index{PerlinNoiseGenerator@{PerlinNoiseGenerator}!SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator@{SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{PerlinNoiseGenerator()}{PerlinNoiseGenerator()}}
+{\footnotesize\ttfamily Sad\+Sapphic\+Games.\+Noise\+Generators.\+Perlin\+Noise\+Generator.\+Perlin\+Noise\+Generator (\begin{DoxyParamCaption}\item[{uint}]{\+\_\+tex\+Width,  }\item[{uint}]{\+\_\+tex\+Height,  }\item[{uint}]{\+\_\+seed,  }\item[{Vector2\+Int}]{\+\_\+lattice\+Cell\+Size,  }\item[{bool}]{\+\_\+allow\+Partial\+Cells = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator}{Perlin\+Noise\+Generator}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tex\+Width} & The width of the generated texture\\
+\hline
+{\em \+\_\+tex\+Height} & The height of the generated texture\\
+\hline
+{\em \+\_\+seed} & The seed of the pseudo-\/random number generation\\
+\hline
+{\em \+\_\+lattice\+Cell\+Size} & The size in pixels of a single cell in the lattice \\
+\hline
+{\em \+\_\+allow\+Partial\+Cells} & If the texture should be allowed to cut off lattice cells along the edge, defaults to false\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_ab42d5027a2d2d982d9df54cc27778dab}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_ab42d5027a2d2d982d9df54cc27778dab}} 
+\index{SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator@{SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator}!GenerateTexture@{GenerateTexture}}
+\index{GenerateTexture@{GenerateTexture}!SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator@{SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateTexture()}{GenerateTexture()}}
+{\footnotesize\ttfamily static Render\+Texture Sad\+Sapphic\+Games.\+Noise\+Generators.\+Perlin\+Noise\+Generator.\+Generate\+Texture (\begin{DoxyParamCaption}\item[{uint}]{\+\_\+tex\+Width,  }\item[{uint}]{\+\_\+tex\+Height,  }\item[{uint}]{\+\_\+seed,  }\item[{Vector2\+Int}]{\+\_\+lattice\+Cell\+Size,  }\item[{bool}]{\+\_\+allow\+Partial\+Cells = {\ttfamily false},  }\item[{bool}]{\+\_\+require\+Seamless\+Tiling = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generates a perlin noise texture using the given parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tex\+Width} & the width of the texture\\
+\hline
+{\em \+\_\+tex\+Height} & the height of the texture\\
+\hline
+{\em \+\_\+seed} & the seed for the pseudo random number generator\\
+\hline
+{\em \+\_\+lattice\+Cell\+Size} & the size in pixels of a single cell in the lattice\\
+\hline
+{\em \+\_\+allow\+Partial\+Cells} & if the texture should be allowed to cut off lattice cells\\
+\hline
+{\em \+\_\+require\+Seamless\+Tiling} & if the texture should tile seamlessly\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated noise texture
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_aabd6d3b521aaf1725f5f73757b6a5129}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_perlin_noise_generator_aabd6d3b521aaf1725f5f73757b6a5129}} 
+\index{SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator@{SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator}!InnerGenerateTexture@{InnerGenerateTexture}}
+\index{InnerGenerateTexture@{InnerGenerateTexture}!SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator@{SadSapphicGames.NoiseGenerators.PerlinNoiseGenerator}}
+\doxysubsubsection{\texorpdfstring{InnerGenerateTexture()}{InnerGenerateTexture()}}
+{\footnotesize\ttfamily override void Sad\+Sapphic\+Games.\+Noise\+Generators.\+Perlin\+Noise\+Generator.\+Inner\+Generate\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+The inner implementation of generated the noise texture 
+
+
+
+Implements \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_abdc0fe6e55a4e7b6d02abf4bb0956f58}{Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Noise\+Generator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Layla/\+Documents/\+My Docs/\+Game\+Dev/\+Noise\+Gen\+Development/\+Assets/\+Packages/\+Noise\+Generators/\+Runtime/\+Noise\+Generators/Perlin\+Noise\+Generator.\+cs\end{DoxyCompactItemize}
