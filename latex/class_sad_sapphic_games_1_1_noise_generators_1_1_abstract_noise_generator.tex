@@ -14,8 +14,8 @@ Inheritance diagram for Sad\+Sapphic\+Games.\+Noise\+Generators.\+Abstract\+Nois
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a8bd8c685fae655c1c5c758dfd92dd28b}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a8bd8c685fae655c1c5c758dfd92dd28b}} 
-void {\bfseries Generate\+Texture} ()
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a204222091d77bc82f27544ce80bc8257}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a204222091d77bc82f27544ce80bc8257}} 
+virtual void {\bfseries Generate\+Texture} ()
 \begin{DoxyCompactList}\small\item\em Generates the noise texture \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a1180f5d97ae0d99df119a0c5e4b0d9aa}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a1180f5d97ae0d99df119a0c5e4b0d9aa}} 
 void {\bfseries Dispose} ()
@@ -36,9 +36,6 @@ virtual void {\bfseries Dispose} (bool disposing)
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a67046ed846ae8d07ad14e571fd328b79}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a67046ed846ae8d07ad14e571fd328b79}} 
-Vector3\+Int {\bfseries thread\+Group\+Size} = new Vector3\+Int(8, 8, 1)
-\begin{DoxyCompactList}\small\item\em The number of threads per group in the compute shader \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a3b1e1e27d434ad88793414972d4d33f8}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a3b1e1e27d434ad88793414972d4d33f8}} 
 Render\+Texture {\bfseries noise\+Texture}
 \end{DoxyCompactItemize}
@@ -51,15 +48,18 @@ Compute\+Shader {\bfseries Noise\+Gen\+Shader}\hspace{0.3cm}{\ttfamily  \mbox{[}
 \mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a3065966f068d8a169fd262f68245fd58}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a3065966f068d8a169fd262f68245fd58}} 
 abstract string {\bfseries Compute\+Shader\+Path}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \begin{DoxyCompactList}\small\item\em The path in the resource folder to the compute shader \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_ad2fa3093ce72c097847f7af2169ae5b5}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_ad2fa3093ce72c097847f7af2169ae5b5}} 
-int {\bfseries generate\+Texture\+Kernel}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a9c983c665430d143f932cad65a7d8ef1}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a9c983c665430d143f932cad65a7d8ef1}} 
+virtual int {\bfseries Generate\+Texture\+Kernel}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \begin{DoxyCompactList}\small\item\em The kernel of the method to generate the texture in the compute shader \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a4de7dba8747bcf15cde5c9b52f5cec39}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a4de7dba8747bcf15cde5c9b52f5cec39}} 
+virtual Vector3\+Int {\bfseries Thread\+Group\+Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of threads per group in the compute shader \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a1df2f2aed8648bae93dbc605cada90f8}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a1df2f2aed8648bae93dbc605cada90f8}} 
 Vector3\+Int {\bfseries tex\+Thread\+Group\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \begin{DoxyCompactList}\small\item\em The number of thread groups used to generate the noise texture \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a16062eb29c1a9e40b0902c43368a43ff}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a16062eb29c1a9e40b0902c43368a43ff}} 
 bool {\bfseries Regenerate\+Texture\+On\+Param\+Change}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\begin{DoxyCompactList}\small\item\em If \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a8bd8c685fae655c1c5c758dfd92dd28b}{Generate\+Texture()}} should be invoked every time a parameter is changed, defaults to false \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em If \mbox{\hyperlink{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_a204222091d77bc82f27544ce80bc8257}{Generate\+Texture()}} should be invoked every time a parameter is changed, defaults to false \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_ac2991c65bd04aa94a9a0e1a63ad7cc11}\label{class_sad_sapphic_games_1_1_noise_generators_1_1_abstract_noise_generator_ac2991c65bd04aa94a9a0e1a63ad7cc11}} 
 virtual bool {\bfseries Require\+Seamless\+Tiling}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \begin{DoxyCompactList}\small\item\em If the texture should be required to tile seamlessly, defaults to true \end{DoxyCompactList}\item 
